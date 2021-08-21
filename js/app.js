@@ -1,3 +1,4 @@
+import * as calender from './calender.js';
 const hamburger = document.querySelector('.hamburger');
 const navList = document.querySelector('.navList');
 const navLines = document.querySelectorAll('.hamburger_line');
