@@ -54,26 +54,23 @@
         }
         .days {
             width: 100%;
-            // display: flex;
-            // flex-wrap: wrap;
             display: grid;
             grid-template-columns: repeat(7, 14%);
             padding: 0.2rem;
             div {
                 font-size: 1.4rem;
                 margin: .3rem;
-                // width: calc(40.2rem/7);
                 height: 5rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
                 transition: background-color ease 200ms;
-                &:hover:not(.today) {
-                    background-color: #262626;
-                    border: .2rem solid #777;
-                    cursor: pointer;
-                }
+                // &:hover:not(.today) {
+                //     background-color: #262626;
+                //     border: .2rem solid #777;
+                //     cursor: pointer;
+                // }
             }
         }
         .prev-date,
@@ -224,15 +221,17 @@
             }
             .days {
                 width: 100%;
-                // display: flex;
-                // flex-wrap: wrap;
                 display: grid;
                 grid-template-columns: repeat(7, 14%);
                 padding: 0.2rem;
                 div {
                     font-size: 1.4rem;
                     margin: .3rem;
-                    // width: calc(100vw / 8);
+                    // &:hover:not(.today) {
+                    //     background-color: #262626;
+                    //     border: .2rem solid #777;
+                    //     cursor: pointer;
+                    // }
                 }
             }
         }
