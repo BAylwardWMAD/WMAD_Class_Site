@@ -40,7 +40,7 @@ const loadCalendar = () => {
     }
     for (let i = 1; i <= lastDay; i++) {
         if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
-            days += `<div class="today">${i}</div>`;
+            days += `<div class="current">${i}</div>`;
         } else {
             days += `<div>${i}</div>`;
         }
@@ -64,10 +64,29 @@ document.querySelector('.next').addEventListener('click', () => {
 loadCalendar();
 
 const daysArray = document.querySelector('.days').children;
+const dayInfo = document.querySelector('.dayInfo');
+
+const daysOfWeek = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+];
 
 for (let i = 0; i < daysArray.length; i++) {
     daysArray[i].addEventListener('click', () => {
-        daysArray[i].classList.toggle('today');
-    })
+        for (let j = 0; j < daysArray.length; j++) {
+            if (daysArray[j].classList.contains('current')) {
+                daysArray[j].classList.toggle('current');
+            }
+        }
+        daysArray[i].classList.toggle('current');
+        let dayOfMonth = new Date();
+        dayOfMonth.setDate(daysArray[i].innerHTML);
+        dayInfo.innerHTML = daysOfWeek[dayOfMonth.getDay()];
+    });
 
 }
