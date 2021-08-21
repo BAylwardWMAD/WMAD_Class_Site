@@ -10,8 +10,6 @@
     <link rel="icon" href="images/logo-icon.ico">
     <link rel="shortcut icon" href="images/logo-icon.ico">
     <script src="js/app.js" defer type="module"></script>
-    <script src="/path/to/cdn/jquery.slim.min.js" defer></script>
-    <script src="/path/to/calendar.min.js" defer></script>
     <title>WMAD-Class of 2022</title>
 </head>
 
@@ -37,8 +35,27 @@
         </div>
     </div>
     <div class="schedule_container">
-        <div class="calendar-container"></div>
-
+        <div class="calendar">
+            <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tues</div>
+                <div>Wedy</div>
+                <div>Thurs</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+            </div>
+        </div>
     </div>
 
     <footer>
