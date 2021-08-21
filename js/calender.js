@@ -1,6 +1,6 @@
 const date = new Date();
 
-const loadCalendar = () => {
+export function loadCalendar() {
     date.setDate(1);
 
     const monthDays = document.querySelector('.days');
@@ -52,41 +52,44 @@ const loadCalendar = () => {
     monthDays.innerHTML = days;
 }
 
-document.querySelector('.prev').addEventListener('click', () => {
-    date.setMonth(date.getMonth() - 1);
-    loadCalendar();
-});
-document.querySelector('.next').addEventListener('click', () => {
-    date.setMonth(date.getMonth() + 1);
-    loadCalendar();
-});
 
-loadCalendar();
+// loadCalendar();
+export function useCalendar() {
 
-const daysArray = document.querySelector('.days').children;
-const dayInfo = document.querySelector('.dayInfo');
-
-const daysOfWeek = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-];
-
-for (let i = 0; i < daysArray.length; i++) {
-    daysArray[i].addEventListener('click', () => {
-        for (let j = 0; j < daysArray.length; j++) {
-            if (daysArray[j].classList.contains('current')) {
-                daysArray[j].classList.toggle('current');
-            }
-        }
-        daysArray[i].classList.toggle('current');
-        let dayOfMonth = new Date();
-        dayOfMonth.setDate(daysArray[i].innerHTML);
-        dayInfo.innerHTML = daysOfWeek[dayOfMonth.getDay()];
+    document.querySelector('.prev').addEventListener('click', () => {
+        date.setMonth(date.getMonth() - 1);
+        loadCalendar();
+    });
+    document.querySelector('.next').addEventListener('click', () => {
+        date.setMonth(date.getMonth() + 1);
+        loadCalendar();
     });
 
+    const daysArray = document.querySelector('.days').children;
+    const dayInfo = document.querySelector('.dayInfo');
+
+    const daysOfWeek = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+    ];
+
+    for (let i = 0; i < daysArray.length; i++) {
+        daysArray[i].addEventListener('click', () => {
+            for (let j = 0; j < daysArray.length; j++) {
+                if (daysArray[j].classList.contains('current')) {
+                    daysArray[j].classList.toggle('current');
+                }
+            }
+            daysArray[i].classList.toggle('current');
+            let dayOfMonth = new Date();
+            dayOfMonth.setDate(daysArray[i].innerHTML);
+            dayInfo.innerHTML = daysOfWeek[dayOfMonth.getDay()];
+        });
+
+    }
 }

@@ -518,7 +518,7 @@ footer .footer-info a i:hover {
 }
 
 .schedule_container .calendar .month h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -526,7 +526,7 @@ footer .footer-info a i:hover {
 }
 
 .schedule_container .calendar .month p {
-  font-size: 1.6rem;
+  font-size: clamp(1rem, 2vw, 1.6rem);
 }
 
 .schedule_container .calendar .weekdays {
@@ -741,7 +741,7 @@ footer .footer-info a i:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 2rem;
+    padding: 0 .5rem;
     text-align: center;
     text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   }
@@ -750,14 +750,14 @@ footer .footer-info a i:hover {
     cursor: pointer;
   }
   .schedule_container .calendar .month h1 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     margin-bottom: 1rem;
   }
   .schedule_container .calendar .month p {
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 2vw, 1.6rem);
   }
   .schedule_container .calendar .weekdays {
     width: 100%;

@@ -8,3 +8,8 @@ hamburger.addEventListener('click', () => {
     navLines[0].classList.toggle('line1');
     navLines[1].classList.toggle('line2');
 });
+
+if (document.body.classList.contains('schedule_body')) {
+    calender.loadCalendar();
+    calender.useCalendar();
+}
