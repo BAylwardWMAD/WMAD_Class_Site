@@ -1,7 +1,7 @@
 .hero-main-content {
     width: 100%;
     height: 500px;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)), url('../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg') center center fixed no-repeat;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)), url('../images/bg-hero.jpg') center center fixed no-repeat;
     background-size: cover;
     color: #fff;
     padding-top: 8rem;
@@ -35,6 +35,11 @@
         .card {
             padding: 0 2rem;
             text-align: center;
+            position: relative;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
             button {
                 padding: .7rem 1.5rem;
                 background: transparent;
