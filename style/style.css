@@ -585,6 +585,12 @@ footer .footer-info a i:hover {
   transition: background-color ease 200ms;
 }
 
+.schedule_container .calendar .days div:hover:not(.today) {
+  background-color: #262626;
+  border: .2rem solid #777;
+  cursor: pointer;
+}
+
 .schedule_container .calendar .prev-date,
 .schedule_container .calendar .next-date {
   opacity: .5;
@@ -791,6 +797,11 @@ footer .footer-info a i:hover {
   .schedule_container .calendar .days div {
     font-size: 1.4rem;
     margin: .3rem;
+  }
+  .schedule_container .calendar .days div:hover:not(.today) {
+    background-color: unset;
+    border: unset;
+    cursor: unset;
   }
   .schedule_container .schedule-info {
     padding: 3rem .5rem;
