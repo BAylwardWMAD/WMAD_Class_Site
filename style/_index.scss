@@ -1,0 +1,105 @@
+.hero-main-content {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)), url('../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg') center center fixed no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 8rem;
+    clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
+    .hero_info {
+        padding: 5rem;
+        width: 50%;
+        h1 {
+            font-weight: 300;
+        }
+    }
+}
+
+.intro_info {
+    padding-top: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.index_cards_container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    .cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card {
+            padding: 0 2rem;
+            text-align: center;
+            button {
+                padding: .7rem 1.5rem;
+                background: transparent;
+                border: 1px solid #fff;
+                margin: 1rem;
+                color: #fff;
+                border-radius: 2px;
+                cursor: pointer;
+                transition: transform ease-in-out 100ms;
+                &:hover {
+                    box-shadow: 0 0 5px #fff;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .hero-main-content {
+        .hero_info {
+            padding: 1rem;
+            width: 100%;
+            margin: 0;
+            h1 {
+                font-weight: 300;
+            }
+        }
+    }
+    .index_cards_container {
+        width: 90%;
+        .cards {
+            flex-direction: column;
+            .card {
+                padding: 0 2rem;
+                text-align: center;
+                button {
+                    padding: .7rem 1.5rem;
+                    background: transparent;
+                    border: 1px solid #fff;
+                    margin: 1rem;
+                    color: #fff;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    transition: transform ease-in-out 100ms;
+                    &:hover {
+                        box-shadow: 0 0 5px #fff;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .hero-main-content {
+        padding-top: 5rem;
+        .hero_info {
+            padding: 1rem;
+            width: 100%;
+            margin: 0;
+            h1 {
+                font-weight: 300;
+            }
+        }
+    }
+}

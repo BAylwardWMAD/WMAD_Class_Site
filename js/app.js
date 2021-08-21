@@ -6,4 +6,4 @@ hamburger.addEventListener('click', () => {
     navList.classList.toggle('toggle');
     navLines[0].classList.toggle('line1');
     navLines[1].classList.toggle('line2');
-})
+});
