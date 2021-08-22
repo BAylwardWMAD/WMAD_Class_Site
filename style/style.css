@@ -255,11 +255,14 @@
   width: 40%;
   max-width: 100%;
   height: auto;
+  -webkit-box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
 }
 
 .index_cards_container {
   width: 100%;
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
 }
 
 .index_cards_container .cards {
@@ -386,6 +389,53 @@
           transform: translateY(0);
 }
 
+.index_textbooks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 0;
+}
+
+.index_textbooks .updates-info {
+  width: 40%;
+  text-align: right;
+  padding: 4rem;
+}
+
+.index_textbooks .updates-info ul {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.index_textbooks .updates-info ul li {
+  padding: .3rem 0;
+}
+
+.index_textbooks .updates-info ul li span {
+  font-weight: 600;
+}
+
+.index_textbooks .updates-info ul li a {
+  color: blue;
+  text-decoration: none;
+}
+
+.index_textbooks .updates-info ul li a:hover {
+  color: red;
+}
+
+.index_textbooks img {
+  width: 40%;
+  max-width: 80%;
+  height: auto;
+}
+
 @media only screen and (max-width: 1000px) {
   .hero-main-content .hero_info {
     padding: 1rem;
@@ -434,6 +484,20 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .index_textbooks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .index_textbooks .updates-info {
+    width: 50%;
+    text-align: left;
+    padding: 4rem 0;
+  }
+  .index_textbooks img {
+    max-width: 80%;
   }
 }
 
