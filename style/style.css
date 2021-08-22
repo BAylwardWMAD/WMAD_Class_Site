@@ -473,6 +473,73 @@ footer .footer-info a i:hover {
   color: #000;
 }
 
+.schedule-intro {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+}
+
+.schedule-intro .snr-switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+  margin-top: 4rem;
+}
+
+.schedule-intro .snr-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.schedule-intro .snr-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.schedule-intro .snr-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.schedule-intro input:checked + .slider {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.schedule-intro input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.schedule-intro input:checked + .slider:before {
+  -webkit-transform: translateX(65px);
+          transform: translateX(65px);
+}
+
+.schedule-intro .slider.round {
+  border-radius: 34px;
+}
+
+.schedule-intro .slider.round:before {
+  border-radius: 50%;
+}
+
 .schedule_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,7 +548,7 @@ footer .footer-info a i:hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 10rem 4rem;
+  padding: 5rem 4rem;
   gap: 10rem;
 }
 
@@ -602,6 +669,7 @@ footer .footer-info a i:hover {
 }
 
 .schedule_container .schedule-info {
+  display: none;
   background-color: #fff;
   color: #000;
   width: 50%;
@@ -611,13 +679,14 @@ footer .footer-info a i:hover {
 
 .schedule_container .schedule-info h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 .schedule_container .schedule-info ul {
   list-style: none;
 }
 
-.schedule_container .schedule-info ul li .class1 {
+.schedule_container .schedule-info ul li .class {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,20 +700,20 @@ footer .footer-info a i:hover {
   position: relative;
 }
 
-.schedule_container .schedule-info ul li .class1 h3,
-.schedule_container .schedule-info ul li .class1 p {
+.schedule_container .schedule-info ul li .class h3,
+.schedule_container .schedule-info ul li .class p {
   margin-top: 1rem;
 }
 
-.schedule_container .schedule-info ul li .class1 h3 {
+.schedule_container .schedule-info ul li .class h3 {
   font-size: 1.5rem;
 }
 
-.schedule_container .schedule-info ul li .class1 p {
+.schedule_container .schedule-info ul li .class p {
   font-size: 1.2rem;
 }
 
-.schedule_container .schedule-info ul li .class1::after {
+.schedule_container .schedule-info ul li .class::after {
   content: "";
   width: 50%;
   position: absolute;
@@ -689,7 +758,7 @@ footer .footer-info a i:hover {
   .schedule_container .schedule-info ul {
     list-style: none;
   }
-  .schedule_container .schedule-info ul li .class1 {
+  .schedule_container .schedule-info ul li .class {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -702,8 +771,8 @@ footer .footer-info a i:hover {
     margin: 1rem 0;
     position: relative;
   }
-  .schedule_container .schedule-info ul li .class1 h3,
-  .schedule_container .schedule-info ul li .class1 p {
+  .schedule_container .schedule-info ul li .class h3,
+  .schedule_container .schedule-info ul li .class p {
     margin-top: 1rem;
   }
 }
@@ -717,7 +786,7 @@ footer .footer-info a i:hover {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    padding: 10rem 0;
+    padding: 5rem 0;
     gap: 10rem;
   }
   .schedule_container .calendar {
@@ -816,7 +885,7 @@ footer .footer-info a i:hover {
   .schedule_container .schedule-info ul li {
     width: 100%;
   }
-  .schedule_container .schedule-info ul li .class1 {
+  .schedule_container .schedule-info ul li .class {
     width: 100%;
   }
 }
