@@ -37,7 +37,8 @@
     justify-content: center;
     .updates-info {
         width: 50%;
-        text-align: center;
+        text-align: left;
+        margin-left: 2rem;
         ul {
             list-style: none;
             font-size: 1.2rem;
@@ -250,6 +251,7 @@
             margin: 0;
             h1 {
                 font-weight: 300;
+                font-size: clamp(1.4rem, 3vw, 3rem);
             }
         }
     }
@@ -258,10 +260,29 @@
         .cards {
             .card {
                 .card-content {
-                    transform: translateY(73%);
+                    transform: translateY(74%);
                     min-width: 25ch;
                 }
             }
+        }
+    }
+    .index_updates {
+        .updates-info {
+            width: 70%;
+        }
+    }
+    .index_textbooks {
+        flex-direction: column;
+        .updates-info {
+            width: 70%;
+            text-align: left;
+            padding: 4rem 0;
+            h1 {
+                font-size: clamp(1.4rem, 3vw, 3rem);
+            }
+        }
+        img {
+            max-width: 80%;
         }
     }
 }

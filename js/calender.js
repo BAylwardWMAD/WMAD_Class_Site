@@ -10,10 +10,10 @@ export function loadCalendar() {
 
         if (wmadSwitch) {
             document.querySelector('.senior-selected').innerHTML = 'Senior A';
-            document.querySelector('.schedule-info').style.display = "none";
+            document.querySelector('.schedule-info').style.opacity = 0;
         } else {
             document.querySelector('.senior-selected').innerHTML = 'Senior B';
-            document.querySelector('.schedule-info').style.display = "none";
+            document.querySelector('.schedule-info').style.opacity = 0;
         };
     });
 
@@ -87,16 +87,16 @@ export function useCalendar() {
     const daysOfWeek = [
         'Sunday',
         'Monday',
-        'Tuesday',
+        'Tuesday - On Campus',
         'Wednesday',
-        'Thursday',
+        'Thursday - On Campus',
         'Friday',
         'Saturday',
     ];
 
     for (let i = 0; i < daysArray.length; i++) {
         daysArray[i].addEventListener('click', () => {
-            document.querySelector('.schedule-info').style.display = "block";
+            document.querySelector('.schedule-info').style.opacity = 1;
             for (let j = 0; j < daysArray.length; j++) {
                 if (daysArray[j].classList.contains('current')) {
                     daysArray[j].classList.toggle('current');

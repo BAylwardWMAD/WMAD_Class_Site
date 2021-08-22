@@ -2,7 +2,7 @@
     z-index: 99;
     position: fixed;
     left: 0;
-    top: 20%;
+    top: 0;
     display: flex;
     flex-direction: row-reverse;
     transform: translateX(-88%);
@@ -13,7 +13,7 @@
         border-radius: 0 20px 20px 0;
         padding: .5rem;
         height: 100%;
-        margin-top: 8rem;
+        margin-top: 20rem;
         .sidebar-line {
             width: 27px;
             height: 3px;
@@ -34,12 +34,6 @@
             transform: rotate(45deg);
         }
     }
-    // h2 {
-    //     writing-mode: vertical-rl;
-    //     text-orientation: upright;
-    //     font-size: 1.4rem;
-    //     cursor: pointer;
-    // }
 }
 
 .id-side-content {
@@ -53,7 +47,7 @@
         list-style: none;
         li {
             text-align: center;
-            margin: .5rem 0;
+            margin: .8rem 0;
         }
     }
 }

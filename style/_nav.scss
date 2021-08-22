@@ -59,7 +59,7 @@
         justify-content: center;
         align-items: center;
         li {
-            font-size: clamp(1rem, 3vw, 1.8rem);
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
             padding: 2rem 0;
             a {
                 text-decoration: none;
@@ -107,11 +107,10 @@
             display: none;
         }
         .navList {
-            width: 50%;
+            width: 70%;
             background: #000;
             background-size: cover;
             li {
-                font-size: 2rem;
                 padding: 2rem 0;
             }
         }

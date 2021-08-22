@@ -98,7 +98,7 @@
 }
 
 .navBar .navList li {
-  font-size: clamp(1rem, 3vw, 1.8rem);
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
   padding: 2rem 0;
 }
 
@@ -157,12 +157,11 @@
     display: none;
   }
   .navBar .navList {
-    width: 50%;
+    width: 70%;
     background: #000;
     background-size: cover;
   }
   .navBar .navList li {
-    font-size: 2rem;
     padding: 2rem 0;
   }
 }
@@ -226,7 +225,8 @@
 
 .index_updates .updates-info {
   width: 50%;
-  text-align: center;
+  text-align: left;
+  margin-left: 2rem;
 }
 
 .index_updates .updates-info ul {
@@ -513,14 +513,35 @@
   }
   .hero-main-content .hero_info h1 {
     font-weight: 300;
+    font-size: clamp(1.4rem, 3vw, 3rem);
   }
   .index_cards_container {
     width: 100%;
   }
   .index_cards_container .cards .card .card-content {
-    -webkit-transform: translateY(73%);
-            transform: translateY(73%);
+    -webkit-transform: translateY(74%);
+            transform: translateY(74%);
     min-width: 25ch;
+  }
+  .index_updates .updates-info {
+    width: 70%;
+  }
+  .index_textbooks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .index_textbooks .updates-info {
+    width: 70%;
+    text-align: left;
+    padding: 4rem 0;
+  }
+  .index_textbooks .updates-info h1 {
+    font-size: clamp(1.4rem, 3vw, 3rem);
+  }
+  .index_textbooks img {
+    max-width: 80%;
   }
 }
 
@@ -758,7 +779,9 @@ footer .footer-info a i:hover {
 }
 
 .schedule_container .schedule-info {
-  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
   background-color: #fff;
   color: #000;
   width: 30%;
@@ -984,7 +1007,7 @@ footer .footer-info a i:hover {
   z-index: 99;
   position: fixed;
   left: 0;
-  top: 20%;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,7 +1029,7 @@ footer .footer-info a i:hover {
   border-radius: 0 20px 20px 0;
   padding: .5rem;
   height: 100%;
-  margin-top: 8rem;
+  margin-top: 20rem;
 }
 
 .important-dates_side-bar .id-side-btn .sidebar-line {
@@ -1056,7 +1079,7 @@ footer .footer-info a i:hover {
 
 .id-side-content ul li {
   text-align: center;
-  margin: .5rem 0;
+  margin: .8rem 0;
 }
 
 .important-dates_side-bar.slide-out {
