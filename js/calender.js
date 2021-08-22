@@ -47,7 +47,6 @@ export function loadCalendar() {
     ];
 
     document.querySelector('.date h1').innerHTML = months[date.getMonth()];
-    document.querySelector('.date p').innerHTML = new Date().toDateString();
 
     let days = "";
 
@@ -68,22 +67,23 @@ export function loadCalendar() {
     monthDays.innerHTML = days;
 }
 
-
-// loadCalendar();
-export function useCalendar() {
-
+export function changeMonth() {
     document.querySelector('.prev').addEventListener('click', () => {
         date.setMonth(date.getMonth() - 1);
         loadCalendar();
+        useCalendar();
     });
     document.querySelector('.next').addEventListener('click', () => {
         date.setMonth(date.getMonth() + 1);
         loadCalendar();
+        useCalendar();
     });
 
+};
+
+export function useCalendar() {
     const daysArray = document.querySelector('.days').children;
     const dayInfo = document.querySelector('.dayInfo');
-
     const daysOfWeek = [
         'Sunday',
         'Monday',
@@ -103,9 +103,14 @@ export function useCalendar() {
                 }
             }
             daysArray[i].classList.toggle('current');
-            let dayOfMonth = new Date();
+            let dayOfMonth = new Date(date);
+
             dayOfMonth.setDate(daysArray[i].innerHTML);
+
             dayInfo.innerHTML = daysOfWeek[dayOfMonth.getDay()];
+
+            document.querySelector('.date p').innerHTML = dayOfMonth.toDateString();
+
 
             if (wmadSwitch) {
                 switch (daysOfWeek[dayOfMonth.getDay()]) {

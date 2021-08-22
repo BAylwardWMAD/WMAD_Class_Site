@@ -12,4 +12,5 @@ hamburger.addEventListener('click', () => {
 if (document.body.classList.contains('schedule_body')) {
     calender.loadCalendar();
     calender.useCalendar();
+    calender.changeMonth();
 }

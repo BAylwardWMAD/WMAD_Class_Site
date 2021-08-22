@@ -120,8 +120,9 @@
                         a {
                             text-decoration: none;
                             color: #fff;
-                            font-family: 'Montserrat', sans-serif;
                         }
+                        font-family: 'Montserrat',
+                        sans-serif;
                         padding: .7rem 1.5rem;
                         background: transparent;
                         border: 1px solid #fff;
@@ -134,8 +135,6 @@
                             box-shadow: 0 0 5px #fff;
                             background-color: #fff;
                             transform: translateX(5%);
-                        }
-                        &:hover a {
                             color: #000;
                             font-weight: 600;
                         }

@@ -59,12 +59,29 @@
         justify-content: center;
         align-items: center;
         li {
-            font-size: 2rem;
+            font-size: clamp(1rem, 3vw, 1.8rem);
             padding: 2rem 0;
             a {
                 text-decoration: none;
                 color: #fff;
                 font-weight: 300;
+                transition: all linear 300ms;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                    width: 100%;
+                    background-color: #fff;
+                    transform: scale(0);
+                    transition: transform 200ms linear;
+                    transform-origin: left;
+                }
+                &:hover::after {
+                    transform: scale(1);
+                }
             }
         }
         transform:translateX(100%);

@@ -129,7 +129,8 @@
         }
         .prev-date,
         .next-date {
-            opacity: .5;
+            opacity: 0.2;
+            pointer-events: none;
         }
         .current {
             background: linear-gradient(320deg, rgba(155, 0, 0, .9), rgba(0, 0, 0, 1)) center center no-repeat;
@@ -140,7 +141,7 @@
         display: none;
         background-color: #fff;
         color: #000;
-        width: 50%;
+        width: 30%;
         padding: 3rem;
         border-radius: 20px;
         h2 {
@@ -165,6 +166,7 @@
                     }
                     p {
                         font-size: 1.2rem;
+                        text-align: right;
                     }
                     &::after {
                         content: "";
