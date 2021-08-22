@@ -1087,6 +1087,83 @@ footer .footer-info a i:hover {
           transform: translateX(0);
 }
 
+.weather_container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url("../images/weather.jpg") top center no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../images/weather.jpg") top center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 400px;
+}
+
+.weather_container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 15px 15px;
+}
+
+.weather_container header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  outline: none;
+  color: #313131;
+  border-radius: 16px;
+  font-size: 1.3rem;
+}
+
+.weather_container header input:focus {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.weather_container main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.weather_container main .location .city {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.weather_container main .location .date {
+  font-size: 1rem;
+}
+
+.weather_container main .current .temp {
+  font-size: 5rem;
+  margin: 30px 0;
+  text-shadow: 2px 8px rgba(0, 0, 0, 0.6);
+}
+
 *,
 *::before,
 *::after {
