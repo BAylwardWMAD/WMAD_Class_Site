@@ -5,6 +5,7 @@ const navLines = document.querySelectorAll('.hamburger_line');
 const sideBarBtn = document.querySelector('.id-side-btn');
 const sideBar = document.querySelector('.important-dates_side-bar');
 
+
 hamburger.addEventListener('click', () => {
     navList.classList.toggle('toggle');
     navLines[0].classList.toggle('line1');
@@ -12,8 +13,9 @@ hamburger.addEventListener('click', () => {
 });
 
 sideBarBtn.addEventListener('click', () => {
-    console.log('test');
     sideBar.classList.toggle('slide-out');
+    document.querySelector('.side-line1').classList.toggle('side-line-toggle');
+    document.querySelector('.side-line2').classList.toggle('side-line-toggle');
 });
 
 if (document.body.classList.contains('schedule_body')) {
