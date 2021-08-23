@@ -1140,7 +1140,7 @@ footer .footer-info a i:hover {
 .weather-section_container .five-day-container .five-day * {
   margin: 0 1rem;
   font-size: 1.3rem;
-  text-shadow: 2px 8px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px rgba(0, 0, 0, 0.6);
 }
 
 .weather-section_container .weather_container {
