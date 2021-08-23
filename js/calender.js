@@ -84,6 +84,7 @@ export function changeMonth() {
 export function useCalendar() {
     const daysArray = document.querySelector('.days').children;
     const dayInfo = document.querySelector('.dayInfo');
+    const scheduleInfo = document.querySelector('.schedule-info')
     const daysOfWeek = [
         'Sunday',
         'Monday',
@@ -94,9 +95,19 @@ export function useCalendar() {
         'Saturday',
     ];
 
+    function scrollToService(selector, yOffset) {
+        const serviceOffset = selector.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({
+            top: serviceOffset,
+            behavior: 'smooth'
+        });
+    }
+
     for (let i = 0; i < daysArray.length; i++) {
         daysArray[i].addEventListener('click', () => {
-            document.querySelector('.schedule-info').style.opacity = 1;
+            scheduleInfo.style.opacity = 1;
+            scrollToService(scheduleInfo, 0);
             for (let j = 0; j < daysArray.length; j++) {
                 if (daysArray[j].classList.contains('current')) {
                     daysArray[j].classList.toggle('current');
