@@ -24,3 +24,7 @@ if (document.body.classList.contains('schedule_body')) {
     calender.useCalendar();
     calender.changeMonth();
 }
+
+if (document.body.classList.contains('weather_body')) {
+    weather.weatherSearch();
+}
