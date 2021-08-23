@@ -295,6 +295,11 @@
   background-size: cover;
 }
 
+.index_cards_container .cards .card4 {
+  background: url("../images/home.jpg") center center no-repeat;
+  background-size: cover;
+}
+
 .index_cards_container .cards .card {
   padding: 15rem 0 0 0;
   position: relative;
@@ -1097,6 +1102,7 @@ footer .footer-info a i:hover {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5rem;
+  margin: 8rem 0;
 }
 
 .weather-section_container .five-day-container {
