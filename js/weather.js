@@ -41,7 +41,7 @@ export function weatherSearch() {
         document.querySelector('.current .humidity').innerHTML = `Humidity: ${weather.main.humidity}%`;
 
         const weatherContainer = document.querySelector('.weather_container');
-        if (Math.round(weather.main.temp) < 25 && Math.round(weather.main.temp) > 18) {
+        if (Math.round(weather.main.temp) < 25 && Math.round(weather.main.temp) >= 18) {
             weatherContainer.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url('../images/weather.jpg') top center no-repeat";
             weatherContainer.style.backgroundSize = "cover";
         } else if (Math.round(weather.main.temp) > 25) {
