@@ -26,7 +26,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="schedule.html">Schedule</a></li>
             <li><a href="weather.html">Weather</a></li>
-            <li><a href="boards.html">Message Boards</a></li>
+            <li><a href="#">Message Boards</a></li>
         </ul>
     </nav>
     <div class="important-dates_side-bar">
@@ -51,27 +51,37 @@
     </div>
     <div class="hero-main-content">
         <div class="hero_info">
-            <h1>Welcome and Congratulations to all the WMAD Seniors. Class of 2022!</h1>
+            <h1>Welcome to my serverless Netlify forums.</h1>
         </div>
     </div>
     <div class="intro_info">
-        <p>Welcome to my WMAD Senior Site! Feel free to look around. </p>
-        <p>You will find the schedules for Senior A & B, as well as any important dates coming up, the local weather in Moncton, and our co-ordinating instructors information.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis assumenda reiciendis vero iusto quam minima eligendi! Ullam illo ex vero. Consectetur quos eveniet perspiciatis corrupti beatae necessitatibus, adipisci porro aperiam.</p>
     </div>
-    <div class="index_updates">
-        <img src="images/update.png" alt="">
-        <div class="updates-info">
-            <h1>Latest Updates - Aug 21st, 2021</h1>
-            <ul>
-                <li>We are currently on track to return on the 8th of September, 2021</li>
-                <li><span>Health Concerns:</span> We will be returning to campus for in-person instruction 2-3 days per week. All instructors have been mandated to get the COVID-19 Vaccine, otherwise they will be frequently tested in accordance with public
-                    health guidelines.</li>
-                <li>The student body currently doesn't require the vaccine, however it is strongly encouraged. (Obvious medical concerns are exceptions), in which case I believe we should maintain as much social distancing as possible.<br><br>Even if we are
-                    not required to social distance, personally I will maintain a healthy distance to protect my family from any potential exposures.</li>
-                <li>For more information about what to expect this upcoming fall term, you can find the link <a href="https://nbcc.ca/admissions/what-can-i-expect" target="_blank">here</a>.</li>
-            </ul>
-        </div>
+
+    <div class="form-container">
+        <formn name="yanny-v-laurel" method="post" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </formn>
     </div>
+
     <div class="index_cards_container">
         <div class="cards">
             <div class="card card1">
@@ -81,6 +91,15 @@
                     <a href="schedule.html"><button>Learn More</button></a>
                 </div>
             </div>
+
+            <div class="card card4">
+                <div class="card-content">
+                    <h3 class="card-title">Home</h3>
+                    <p class="card-body">Return back to the Home page to catch up on WMAD news, I look forward to hearing your feedback!</p>
+                    <a href="#"><button>Learn More</button></a>
+                </div>
+            </div>
+
             <div class="card card2">
                 <div class="card-content">
                     <h3 class="card-title">Weather</h3>
@@ -88,36 +107,6 @@
                     <a href="weather.html"><button>Learn More</button></a>
                 </div>
             </div>
-            <div class="card card3">
-                <div class="card-content">
-                    <h3 class="card-title">Message Boards</h3>
-                    <p class="card-body">Come check out my local message boards, you can post questions or just discuss commons themes.</p>
-                    <a href="boards.html"><button>Learn More</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="index_updates index_textbooks">
-        <img src="images/textbooks.jpg" alt="">
-        <div class="updates-info">
-            <h1>Required Textbooks</h1>
-            <ul>
-                <li>Murach’s Java Programming, 5th Edition<br>ISBN: 9781943872077<br>Author: Murach<br>Find the link to buy <a href="https://www.murach.com/shop-books/all/categories?virtuemart_category_id=0">here</a></li>
-            </ul>
-            <h1>Recommended Equipment</h1>
-            <ul>
-                <li>Durable laptop backpack</li>
-                <li>Pencils/Pens (If you like to take notes)</li>
-                <li>Notebooks</li>
-                <li>Water Bottle</li>
-                <li>Snacks (If you want)</li>
-                <li>Lunch or money to eat out</li>
-                <li>Reliable Coffee Mug (Contigo's from Costco are really nice)</li>
-                <li>External HDD (If you prefer, not required by no means, can save everthing to GitHub)</li>
-                <li>Portable Battery Charger for Phone etc. (Again not required, just nice to have)</li>
-
-            </ul>
         </div>
     </div>
 
