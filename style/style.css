@@ -1300,4 +1300,8 @@ body {
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
+
+body .wip {
+  pointer-events: none;
+}
 /*# sourceMappingURL=style.css.map */

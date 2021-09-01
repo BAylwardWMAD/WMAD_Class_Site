@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
     if (prevScrollpos > currentScrollPos) {
         navBar.style.top = "0";
     } else {
-        navBar.style.top = "-100px";
+        navBar.style.top = "-150px";
     }
     prevScrollpos = currentScrollPos;
 });
