@@ -98,7 +98,7 @@
         margin: 0;
         justify-content: space-between;
         #home-link {
-            width: 50%;
+            width: 37%;
             #logo {
                 width: 100%;
                 padding: 1rem;
@@ -121,7 +121,20 @@
 @media only screen and (max-width:450px) {
     .navBar {
         #home-link {
-            width: 80%;
+            width: 50%;
+            min-width: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width:290px) {
+    .navBar {
+        max-width: 100%;
+        margin: 0;
+        // padding: 0;
+        #home-link {
+            width: 50%;
+            min-width: unset;
         }
     }
 }

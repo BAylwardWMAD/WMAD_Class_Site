@@ -24,4 +24,15 @@ body {
     .wip {
         pointer-events: none;
     }
+    &::-webkit-scrollbar {
+        width: .3rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgb(1, 4, 17);
+        width: .3rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(155, 0, 0, .9);
+        width: .3rem;
+    }
 }

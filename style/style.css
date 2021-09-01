@@ -149,7 +149,7 @@
             justify-content: space-between;
   }
   .navBar #home-link {
-    width: 50%;
+    width: 37%;
   }
   .navBar #home-link #logo {
     width: 100%;
@@ -170,7 +170,19 @@
 
 @media only screen and (max-width: 450px) {
   .navBar #home-link {
-    width: 80%;
+    width: 50%;
+    min-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .navBar {
+    max-width: 100%;
+    margin: 0;
+  }
+  .navBar #home-link {
+    width: 50%;
+    min-width: unset;
   }
 }
 
@@ -214,26 +226,47 @@
 }
 
 .index_updates {
+  width: 80%;
+  margin: 0 auto 8rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.index_updates::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #000;
+}
+
+.index_updates::-webkit-scrollbar {
+  width: 6px;
+  background-color: #000;
+}
+
+.index_updates::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 0, 0, 0.8);
 }
 
 .index_updates .updates-info {
-  width: 50%;
+  width: 40%;
   text-align: left;
   margin-left: 2rem;
+  padding: 3rem 2rem;
 }
 
 .index_updates .updates-info ul {
   list-style: none;
   font-size: 1.2rem;
+  padding-bottom: 4rem;
 }
 
 .index_updates .updates-info ul li {
@@ -312,6 +345,7 @@
   transition: -webkit-transform ease-in-out 200ms;
   transition: transform ease-in-out 200ms;
   transition: transform ease-in-out 200ms, -webkit-transform ease-in-out 200ms;
+  min-width: 32%;
 }
 
 .index_cards_container .cards .card .card-content {
@@ -475,23 +509,30 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .index_updates img {
     width: 100%;
     max-width: 100%;
     height: auto;
   }
+  .index_updates .updates-info {
+    width: 80%;
+  }
   .index_cards_container {
     width: 90%;
+    margin: 0 auto;
   }
   .index_cards_container .cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .index_cards_container .cards .card {
+    min-width: unset;
   }
   .index_textbooks {
     -webkit-box-orient: vertical;
@@ -1073,11 +1114,11 @@ footer .footer-info a i:hover {
 .id-side-content {
   background-color: #000;
   padding: 2rem;
+  max-width: 372px;
 }
 
 .id-side-content h2 {
   padding-bottom: 1rem;
-  text-align: center;
 }
 
 .id-side-content ul {
@@ -1085,7 +1126,6 @@ footer .footer-info a i:hover {
 }
 
 .id-side-content ul li {
-  text-align: center;
   margin: .8rem 0;
 }
 
@@ -1303,5 +1343,19 @@ body {
 
 body .wip {
   pointer-events: none;
+}
+
+body::-webkit-scrollbar {
+  width: .3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #010411;
+  width: .3rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(155, 0, 0, 0.9);
+  width: .3rem;
 }
 /*# sourceMappingURL=style.css.map */
