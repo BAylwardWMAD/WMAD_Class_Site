@@ -180,13 +180,15 @@
 
 .index_textbooks {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 4rem 0;
+    max-height: unset;
+    overflow: unset;
     .updates-info {
         width: 40%;
         text-align: left;
-        padding: 4rem;
+        padding: 0 4rem;
         ul {
             list-style: none;
             font-size: 1.2rem;
