@@ -1182,9 +1182,9 @@ footer .footer-info a i:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 1px solid #fff;
 }
 
@@ -1288,6 +1288,14 @@ footer .footer-info a i:hover {
   font-size: 24px;
   font-weight: 500;
   text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 1200px) {
+  .weather-section_container .five-day-container .five-day * {
+    margin: 0;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    padding: 0 1rem;
+  }
 }
 
 .form-container {

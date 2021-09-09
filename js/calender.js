@@ -142,7 +142,7 @@ export function useCalendar() {
                         document.querySelector('.class6 p').innerHTML = "Server Side Web (ASP.NET)<br>PROG1025<br><br>Instructor: Judson Murray";
                         break;
                     case 'Tuesday - On Campus':
-                        document.querySelector('.class1 p').innerHTML = "Employment Strategies<br>PERS1070<br><br>Instructor: Lisa Melanson";
+                        document.querySelector('.class1 p').innerHTML = "Employment Strategies<br>PERS1070<br><br>Instructor: Sean Hemming";
                         document.querySelector('.class2 p').innerHTML = "Intermediate Java<br>PROG1090I<br><br>Instructor: Andre Boudreau";
                         document.querySelector('.class3 p').innerHTML = "Intermediate Java<br>PROG1090J<br><br>Instructor: Andre Boudreau";
                         document.querySelector('.class4 p').innerHTML = "<strong>Free Period</strong>";
@@ -161,7 +161,7 @@ export function useCalendar() {
                         document.querySelector('.class1 p').innerHTML = "N-Tier Development<br>PROG1179<br><br>Instructor: Judson Murray";
                         document.querySelector('.class2 p').innerHTML = "N-Tier Development<br>PROG1179<br><br>Instructor: Judson Murray";
                         document.querySelector('.class3 p').innerHTML = "<strong>Free Period</strong>";
-                        document.querySelector('.class4 p').innerHTML = "Employment Strategies<br>PERS1070<br><br>Instructor: Lisa Melanson";
+                        document.querySelector('.class4 p').innerHTML = "Employment Strategies<br>PERS1070<br><br>Instructor: Sean Hemming";
                         document.querySelector('.class5 p').innerHTML = "<strong>Free Period</strong>";
                         document.querySelector('.class6 p').innerHTML = "<strong>Free Period</strong>";
                         break;
@@ -205,14 +205,14 @@ export function useCalendar() {
                         document.querySelector('.class2 p').innerHTML = "Server Side Web (ASP.NET)<br>PROG1025<br><br>Instructor: Bonnie Ryan";
                         document.querySelector('.class3 p').innerHTML = "N-Tier Development<br>PROG1179<br><br>Instructor: Stephen Carter";
                         document.querySelector('.class4 p').innerHTML = "N-Tier Development<br>PROG1179<br><br>Instructor: Stephen Carter";
-                        document.querySelector('.class5 p').innerHTML = "Employment Strategies<br>PERS1070<br><br>Instructor: Lisa Melanson";
+                        document.querySelector('.class5 p').innerHTML = "Employment Strategies<br>PERS1070<br><br>Instructor: Sean Hemming";
                         document.querySelector('.class6 p').innerHTML = "Advanced JavaScript<br>PROG1317A<br><br>Instructor: Chris Cusack";
                         break;
                     case 'Wednesday - On Campus':
                         document.querySelector('.class1 p').innerHTML = "Server Side Web (ASP.NET)<br>PROG1025<br><br>Instructor: Bonnie Ryan";
                         document.querySelector('.class2 p').innerHTML = "Server Side Web (ASP.NET)<br>PROG1025<br><br>Instructor: Bonnie Ryan";
                         document.querySelector('.class3 p').innerHTML = "<strong>Free Period</strong>";
-                        document.querySelector('.class4 p').innerHTML = "Employment Strategies<br>PERS1070<br><br>Instructor: Lisa Melanson";
+                        document.querySelector('.class4 p').innerHTML = "Employment Strategies<br>PERS1070<br><br>Instructor: Sean Hemming";
                         document.querySelector('.class5 p').innerHTML = "N-Tier Development<br>PROG1179<br><br>Instructor: Stephen Carter";
                         document.querySelector('.class6 p').innerHTML = "N-Tier Development<br>PROG1179<br><br>Instructor: Stephen Carter";
                         break;
