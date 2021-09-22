@@ -7,7 +7,6 @@ const navLines = document.querySelectorAll('.hamburger_line');
 const sideBarBtn = document.querySelector('.id-side-btn');
 const sideBar = document.querySelector('.important-dates_side-bar');
 
-
 hamburger.addEventListener('click', () => {
     navList.classList.toggle('toggle');
     navLines[0].classList.toggle('line1');
