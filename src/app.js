@@ -31,6 +31,6 @@ app.get('/weather', (req, res) => {
     res.render('weather', {});
 });
 
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('Server is up on port 3000.')
 })
